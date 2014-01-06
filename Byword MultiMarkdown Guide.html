@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset=utf-8">
+
+	<meta charset="utf-8">
+	<meta name="format" content="complete">
+	<title>Byword MultiMarkdown Guide</title>
+	<meta name="author" content="The Byword Team">
+	<meta name="email" content="byword@metaclassy.com">
+	<meta name="date" content="May 29, 2011">
+    <link href="space-gray.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div id="wrapper">
+    <div id="content">
+<h1>Byword MultiMarkdown Guide</h1>
+
+<hr>
+
+<h2 id="section-summary">Summary</h2>
+
+<ul>
+<li><a href="#section-introduction">Introduction</a></li>
+<li><a href="#section-syntax">Syntax reference</a></li>
+<li><a href="#section-editing">Editing markdown documents</a></li>
+<li><a href="#section-preview">Preview mode</a></li>
+<li><a href="#section-export">Exporting documents</a></li>
+<li><a href="#section-mmd">MultiMarkdown highlights</a></li>
+</ul>
+
+<hr>
+
+<div class="source">
+Written and generated with <strong>Byword</strong> (<a href="guide.md">view source</a>)
+</div>
+
+<hr>
+
+<h2 id="section-introduction">Introduction</h2>
+
+<p>Markdown is a text formatting syntax inspired on plain text email. It is extremely simple, memorizable and visually lightweight on artifacts so as not to hinder reading &#8211; characteristics that go hand in hand with the essence of <strong>Byword</strong>.</p>
+
+<p>In the words of its creator, <a href="http://daringfireball.net/">John Gruber</a>:</p>
+
+<blockquote>
+<p>The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like itâ€™s been marked up with tags or formatting instructions.</p>
+</blockquote>
+
+<p>In the next sections you&#8217;ll be guided through some of the features that will make <strong>Byword</strong> your new favorite Markdown editor. </p>
+
+<hr>
+
+<h2 id="section-syntax">Syntax Reference</h2>
+
+<p>If you&#8217;re unfamiliar with Markdown&#8217;s syntax, please spare a couple of minutes going through the <a href="syntax.html" title="Markdown syntax guide">syntax guide</a>. Otherwise, just go ahead and skip to the next section.</p>
+
+<hr>
+
+<h2 id="section-editing">Editing Markdown documents</h2>
+
+<p>This section is dedicated to introduce you to the differences between editing plain/rich text documents and Markdown documents.</p>
+
+<h3 id="section-editing-create">Creating new documents</h3>
+
+<p>To create a Markdown document, head to the File menu and select &#8220;New Markdown document&#8221; or simply press the shortcut â‡§âŒ˜N.</p>
+
+<blockquote>
+<p><strong>NOTE</strong><br>
+You can convert a plain text document to a Markdown document by going to the &#8220;Format&#8221; menu and pressing âŒ¥ to reveal Markdown conversion option or pressing the combination âŒ¥â‡§âŒ˜T.</p>
+
+<p>To confirm that you&#8217;re editing in Markdown mode, look at the counters at the bottom of your screen. If the counters are not visible, you can enable them by using the shortcut â‡§âŒ˜K .</p>
+</blockquote>
+
+<h3 id="section-editing-open">Opening documents</h3>
+
+<p>Markdown documents are opened like any other document, but <strong>Byword</strong> will only recognize and activate Markdown features if the file is bearing a well-known extension.</p>
+
+<p>The recognized extensions are <code>.md</code>, <code>.markdown</code>, <code>.mdown</code> and <code>.markdn</code>.</p>
+
+<p>If the document does not have one of these well-known extensions, you can always enable Markdown features by converting the file (âŒ¥â‡§âŒ˜T).</p>
+
+<blockquote>
+<p><strong>NOTE</strong><br>
+While Markdown does not have an official extension we recommend the usage of <code>.md</code>, as it&#8217;s the most widely adopted one.</p>
+</blockquote>
+
+<h3 id="section-editing-shortcuts">Handy shortcuts</h3>
+
+<p>Even though Markdown&#8217;s formatting syntax is light, there are a couple of commonly used style artifacts that force your hands out of their natural stance when typing &#8211; <strong>bold</strong> and <em>italic</em>.</p>
+
+<p><strong>Byword</strong> preserves the hotkeys widely used for these effects. If you&#8217;re about to write a word in bold or italic, just type âŒ˜B or âŒ˜I and it will place the corresponding formatting elements in place and advance the cursor. You can also select a word and apply the style or, conversely, select a word wrapped by these styles and <strong>Byword</strong> will remove them for you.</p>
+
+<h3 id="section-editing-images">Images</h3>
+
+<p>If you drag images into the text, they will automatically be replaced by a Markdown reference to the file.</p>
+
+<p>Due to <strong>Byword</strong>&#8217;s MultiMarkdown support you can even add custom attributes to your images, altering the way they&#8217;re displayed. Please refer to <a href="#section-mmd-attributes">Custom attributes</a> section on the MultiMarkdown highlights chapter for more details.</p>
+
+<blockquote>
+<p><strong>NOTE</strong><br>
+Keep in mind that when dragging images to the text, <strong>Byword</strong> will introduce a reference to that file&#8217;s location on your disk (noticeable by the <code>file:</code> prefix).
+When publishing online, make sure you update this reference, otherwise you&#8217;ll run into broken links.</p>
+</blockquote>
+
+<hr>
+
+<h2 id="section-preview">Preview mode</h2>
+
+<p>Markdown is often used as source to generate documents under more commonly used publishing formats like HTML. The fact that it&#8217;s an extremely simple, plain text based formatting syntax pretty much turns any text editor into a Markdown editor.</p>
+
+<p><strong>Byword</strong> expands the concept of a markdown editor by giving you the option to preview your text. At the distance of a shortcut (âŒ¥âŒ˜P), you can get a feel of how your writings will look like.</p>
+
+<img src="img/preview.png" alt="Byword in preview mode" id="img-preview" title="Byword in preview mode" class="shadow" />
+
+
+<p>The preview mode will render the text using your current style settings. To dismiss this mode and go back to editing, just hit the Escape key.</p>
+
+<hr>
+
+<h2 id="section-export">Exporting documents</h2>
+
+<p>In the vast majority of times, you will be using Markdown for its <em>raison d&#8217;Ãªtre</em> &#8211; as a source format to generate HTML. <strong>Byword</strong> let&#8217;s you export the HTML output in two ways:</p>
+
+<img src="img/export.png" alt="Exporting options" id="img-export" title="Export options" />
+
+
+<ul>
+<li>Copy the HTML output directly to your clipboard &#8211; so you can conveniently paste it into your favorite HTML editor<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a>;</li>
+<li>Export to a file.</li>
+</ul>
+
+<p>We know how much you love <strong>Byword</strong>&#8217;s aesthetics so we even added a little bonus to the option of exporting to a file.</p>
+
+<img src="img/export_theme.png" alt="Exporting with Bywords current theme" id="img-export_theme" title="Exporting with Byword's current theme" />
+
+
+<p>Including <strong>Byword</strong>&#8217;s theme in the exported file will give you an exact copy of what you see in the preview mode. With this option enabled, font type, size and text width will be preserved when the output file is generated.</p>
+
+<hr>
+
+<h2 id="section-mmd">MultiMarkdown highlights</h2>
+
+<p>As useful as Markdown is on its own, MultiMarkdown extends it with many features. This section will briefly introduce you to the most interesting of them.</p>
+
+<blockquote>
+<p><strong>NOTE</strong><br>
+For a comprehensive reference, please refer to Fletcher T. Penney&#8217;s <a href="https://github.com/fletcher/MultiMarkdown/blob/master/Documentation/MultiMarkdown%20User%27s%20Guide.md" title="Fletcher T. Penney's MultiMarkdown user guide">MultiMarkdown user guide</a>.</p>
+</blockquote>
+
+<h3 id="section-mmd-xrefs">Cross-references</h3>
+
+<p>Cross-references will become your new best friend when writing long documents. They will highly improve the navigability of the generated documents by giving the reader links to jump across sections with a single click.</p>
+
+<h4 id="section-mmd-xrefs-example">Example</h4>
+
+<pre><code>Clicking [here][section-preview] will lead you to the **Preview** section.
+</code></pre>
+
+<h4 id="section-mmd-xrefs-result">Result</h4>
+
+<p>Clicking <a href="#section-preview">here</a> will lead you do the <strong>Preview</strong> section.</p>
+
+<h3 id="section-mmd-footnotes">Footnotes</h3>
+
+<p>Footnotes are a simple, yet effective way of conveying non-crucial information to the reader.</p>
+
+<p>Rather than parenthesizing a side note or place it between em-dashes &#8211; as unimportant as it is, the reader will go through it, just like you did now &#8211; you can defer its reading and expand on your thoughts there.</p>
+
+<h4>Example</h4>
+
+<pre><code>Clicking this number[^fn-sample_footnote] will lead you to a footnote.
+
+[^fn-sample_footnote]: Handy! Now click the return link to go back.
+</code></pre>
+
+<h4 id="section-mmd-footnotes-result">Result</h4>
+
+<p>Clicking this number<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a> will lead you to a footnote.</p>
+
+<h3 id="section-mmd-attributes">Custom attributes</h3>
+
+<p>MultiMarkdown introduces an unobtrusive way of adding custom attributes to images and links, allowing you to change they way they are displayed.</p>
+
+<blockquote>
+<p><strong>NOTE</strong><br>
+This is not available for inline links or images.</p>
+</blockquote>
+
+<h4 id="section-mmd-attributes-example">Example</h4>
+
+<pre><code>The original image is 128x128 and contains no shadow.
+![Original icon][img-icon_original]
+
+It will be displayed as 96x96 with a subtle shadow.
+![Styled icon][img-icon_styled]
+
+[img-icon_original]: img/icon128.png &quot;B&quot;
+[img-icon_styled]: img/icon128.png &quot;B&quot; width=&quot;96px&quot; height=&quot;96px&quot;
+class=&quot;shadow&quot;
+</code></pre>
+
+<h4 id="section-mmd-attributes-result">Result</h4>
+
+<p>The original image is 128x128 and contains no shadow.</p>
+
+<img src="img/icon128.png" alt="Original icon" id="img-icon_original" title="A" />
+
+
+<p>It will be displayed as 96x96 with a subtle shadow.</p>
+
+<img src="img/icon128.png" alt="Styled icon" id="img-icon_styled" title="B" style="height:96px;width:96px;" class="shadow" />
+
+
+<h3 id="section-mmd-meta">Meta information</h3>
+
+<p>With MultiMarkdown, you can also embed metadata on your documents.</p>
+
+<p>Metadata must be placed at the top of the document &#8211; there can be no white-spaces before &#8211; and it ends with the first empty line. Each entry is composed of key and values, separated by a colon (<code>:</code>).</p>
+
+<p>There are plenty of keys supported, some of the most common being <code>Title</code>, <code>Author</code>, <code>Date</code>, <code>Copyright</code>, <code>Keywords</code> and <code>Email</code>. Be sure to check <a href="https://github.com/fletcher/MultiMarkdown/blob/master/Documentation/MultiMarkdown%20User%27s%20Guide.md" title="Fletcher T. Penney's MultiMarkdown user guide">Fletcher&#8217;s guide</a> for a full reference.</p>
+
+<blockquote>
+<p><strong>TIP</strong><br>
+When adding metadata information to your documents, make sure you always leave two spaces at the end of each metadata line. This will ensure that exporting to plain Markdown will result in a properly formatted piece of text &#8211; as opposed to a single run-on paragraph.</p>
+</blockquote>
+
+<h4 id="section-mmd-meta">Example</h4>
+
+<pre><code>Title:  Document title  
+Author: John Doe  
+        Jane Doe  
+Date:   January 1st, 2012  
+</code></pre>
+
+<h3 id="section-mmd-tables">Tables</h3>
+
+<p>Tables are perfect to display structured data in rows and columns. MultiMarkdown supports the generation of tables by using a couple of simple rules alongside the use of the pipe character &#8211; <code>|</code>.</p>
+
+<h4 id="section-mmd-tables-example">Example</h4>
+
+<pre><code>| First Header  | Second Header | Third Header         |
+| :------------ | :-----------: | -------------------: |
+| First row     | Data          | Very long data entry |
+| Second row    | **Cell**      | *Cell*               |
+| Third row     | Cell that spans across two columns  ||
+[Table caption, works as a reference][section-mmd-tables-table1] 
+</code></pre>
+
+<h4 id="section-mmd-tables-result">Result</h4>
+
+<table>
+<caption id="section-mmd-tables-table1">Table caption, works as a reference</caption>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:center;"/>
+<col style="text-align:right;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">First Header</th>
+	<th style="text-align:center;">Second Header</th>
+	<th style="text-align:right;">Third Header</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">First row</td>
+	<td style="text-align:center;">Data</td>
+	<td style="text-align:right;">Very long data entry</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Second row</td>
+	<td style="text-align:center;"><strong>Cell</strong></td>
+	<td style="text-align:right;"><em>Cell</em></td>
+</tr>
+<tr>
+	<td style="text-align:left;">Third row</td>
+	<td style="text-align:center;" colspan="2">Cell that spans across two columns</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="section-mmd-tables-structure">Structure</h4>
+
+<p>If you are familiar with HTML tables, you&#8217;ll instantly recognize the structure of the table syntax. All tables must begin with one or more <strong>rows</strong> of <strong>headers</strong>, and each <strong>row</strong> may have one or more <strong>columns</strong>.</p>
+
+<p>These are the most important rules you&#8217;ll be dealing with:</p>
+
+<ul>
+<li>There must be at least one <code>|</code> per line;</li>
+<li>After the header rows, there must be a line containing only <code>|</code>, <code>-</code>, <code>:</code>, <code>.</code>, or spaces;</li>
+<li>Cell content must be on one line only;</li>
+<li>Columns are separated by <code>|</code>.</li>
+</ul>
+
+<h4 id="section-mmd-tables-alignment">Alignment</h4>
+
+<p>To align the data cells on the table, you need to introduce a special row right after the headers, that will determine how the following rows &#8211; the data rows &#8211; will be aligned.</p>
+
+<pre><code>| Header One | Header Two | Header Three | Header Four |
+| ---------- | :--------- | :----------: | ----------: |
+| Default    | Left       | Center       | Right       |
+</code></pre>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:center;"/>
+<col style="text-align:right;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Header One</th>
+	<th style="text-align:left;">Header Two</th>
+	<th style="text-align:center;">Header Three</th>
+	<th style="text-align:right;">Header Four</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">Default</td>
+	<td style="text-align:left;">Left</td>
+	<td style="text-align:center;">Center</td>
+	<td style="text-align:right;">Right</td>
+</tr>
+</tbody>
+</table>
+
+<p>The placing of the colon (<code>:</code>) is optional and determines the alignment of columns in the data rows. This line is mandatory and must be placed between the headers and the data rows.</p>
+
+<p>Also, the usage of the <code>|</code> at the beginning or end of the rows is optional &#8211; as long as at least one <code>|</code> is present in each row.</p>
+
+<h4 id="section-mmd-tables-colspanning">Column spanning</h4>
+
+<p>To make a cell span across multiple columns, instead of using a single pipe (<code>|</code>) character to delimit that cell, use the number of pipes corresponding to the columns you wish to span.</p>
+
+<pre><code>| Column 1 | Column 2 | Column 3 | Column 4 |
+| -------- | :------: | -------- | -------- |
+| No span  | Span across three columns    |||
+</code></pre>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:center;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Column 1</th>
+	<th style="text-align:center;">Column 2</th>
+	<th style="text-align:left;">Column 3</th>
+	<th style="text-align:left;">Column 4</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">No span</td>
+	<td style="text-align:center;" colspan="3">Span across three columns</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+<p><strong>NOTE</strong><br>
+This is only an introduction to MultiMarkdown&#8217;s tables. For the full reference, please refer to the &#8220;Tables&#8221; section on the <a href="https://github.com/fletcher/MultiMarkdown/blob/master/Documentation/MultiMarkdown%20User%27s%20Guide.md" title="Fletcher T. Penney's MultiMarkdown user guide">MultiMarkdown user guide</a>.</p>
+</blockquote>
+
+<hr>
+
+<p>If you have any doubts don&#8217;t hesitate to contact us via email at <strong>byword@metaclassy.com</strong> or via Twitter at <a href="http://twitter.com/bywordapp" title="Byword on Twitter">@bywordapp</a> or <a href="http://twitter.com/metaclassy" title="Metaclassy on Twitter">@metaclassy</a>.</p>
+
+<p>Enjoy,<br>
+The Byword team.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p>When copying to clipboard, <strong>Byword</strong> will only place the equivalent of the <code>body</code> tag contents. On the other hand, when exporting to a file, a complete HTML file will be generated. <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:2">
+<p>Handy! Now click the return link to go back. <a href="#fnref:2" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+    </div>
+  </div> <!-- End wrapper -->
+</body>
+</html>
